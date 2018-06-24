@@ -1,20 +1,36 @@
 {
-  "name": "language-spacebars",
+  "name": "spacebars",
   "version": "0.2.2",
-  "private": true,
-  "description": "Adds syntax highlighting and snippets to Spacebars files in Atom.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zaku-eu/atom-language-spacebars"
+    "url": "https://github.com/tamino-martinius/vscode-language-spacebars"
   },
   "license": "MIT",
+  "publisher": "tamino-martinius",
   "engines": {
-    "atom": ">0.50.0"
+    "vscode": "0.10.x"
   },
-  "dependencies": {},
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/zaku-eu/atom-language-spacebars/issues"
-  },
-  "homepage": "https://github.com/zaku-eu/atom-language-spacebars"
+  "icon": "images/icon.png",
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "spacebars",
+      "extensions": [".html", ".handlebars", ".hbs", ".tpl"],
+      "aliases": ["Spacebars", "spacebars"],
+      "mimetypes": ["text/x-spacebars-template"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "spacebars",
+      "scopeName": "text.html.space",
+      "path": "./syntaxes/Spacebars.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "spacebars",
+      "path": "./snippets/snippets.json"
+    }]
+  }
 }
