@@ -653,12 +653,5 @@
     {
       "include": "text.html.basic"
     }
-  ],
-  "fileTypes": [
-    "html",
-    "handlebars",
-    "hbs",
-    "handlebars.erb",
-    "hbs.erb"
   ]
 }
