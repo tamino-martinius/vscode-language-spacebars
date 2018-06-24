@@ -1,6 +1,6 @@
 # language-spacebars package
 
-Adds syntax highlighting and snippets to Spacebars files in Atom.
+Adds syntax highlighting and snippets to Spacebars files in VS Code.
 Can also be used for Handlebars.
 
 ## Feedback
@@ -11,7 +11,7 @@ Feel free to submit issues or pull requests with suggestions for more.
 
 #### if: `if`
 
-```spacebars
+```hbs
 {{#if condition}}
 
 {{/if}}
@@ -19,7 +19,7 @@ Feel free to submit issues or pull requests with suggestions for more.
 
 #### if - else: `ife`
 
-```spacebars
+```hbs
 {{#if condition}}
 
 {{else}}
@@ -29,7 +29,7 @@ Feel free to submit issues or pull requests with suggestions for more.
 
 #### unless: `un`
 
-```spacebars
+```hbs
 {{#unless condition}}
 
 {{/unless}}
@@ -37,7 +37,7 @@ Feel free to submit issues or pull requests with suggestions for more.
 
 #### unless - else: `une`
 
-```spacebars
+```hbs
 {{#unless condition}}
 
 {{else}}
@@ -47,7 +47,7 @@ Feel free to submit issues or pull requests with suggestions for more.
 
 #### with: `wt`
 
-```spacebars
+```hbs
 {{#with item}}
 
 {{/with}}
@@ -55,7 +55,7 @@ Feel free to submit issues or pull requests with suggestions for more.
 
 #### with - else: `wte`
 
-```spacebars
+```hbs
 {{#with item}}
 
 {{else}}
@@ -65,14 +65,32 @@ Feel free to submit issues or pull requests with suggestions for more.
 
 #### each: `ea`
 
-```spacebars
+```hbs
 {{#each items}}
 
 {{/each}}
 ```
 
+#### each - else: `eae`
+
+```hbs
+{{#each items}}
+
+{{else}}
+
+{{/each}}
+```
+
+#### let: `let`
+
+```hbs
+{{#let variables}}
+
+{{/let}}
+```
+
 #### partial: `pa`
 
-```spacebars
+```hbs
 {{> template }}
 ```
