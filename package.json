@@ -25,7 +25,7 @@
     }],
     "grammars": [{
       "language": "spacebars",
-      "scopeName": "text.html.space",
+      "scopeName": "text.html.spacebars",
       "path": "./syntaxes/Spacebars.tmLanguage.json"
     }],
     "snippets": [{
