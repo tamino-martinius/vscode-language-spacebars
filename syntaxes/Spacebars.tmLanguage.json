@@ -407,7 +407,7 @@
     },
     "string-single-quoted": {
       "begin": "'",
-      "end": "'",
+      "end": "(?<!\\\\)(\\\\\\\\)*'",
       "name": "string.quoted.single.spacebars",
       "endCaptures": {
         "0": {
